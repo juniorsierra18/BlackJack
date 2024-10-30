@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="retro-background">
+        <div class="grid"></div>
+    </div>
+
+    <!-- Menú de Inicio -->
+    <div id="start-menu">
+        <h1>BlackJack</h1>
+        <div>
+            <button id="play-game">Jugar</button>
+            <button id="show-rules">Reglas</button>
+        </div>
+    </div>
+
+    <!-- Modal de Reglas del Juego -->
+    <div id="rules-modal">
+        <div id="rules-content">
+            <h2>Reglas del Juego</h2>
+            <p>El objetivo del Blackjack es acercarse lo más posible a 21 puntos sin pasarse. Tú juegas contra el crupier.</p>
+            <p>Puedes pedir cartas para acercarte a 21. Si te pasas, pierdes automáticamente.</p>
+            <button id="close-rules">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Tablero de Juego -->
+    <div id="game-board">
+        <h1>BlackJack</h1>
+        <div id="dealer">
+            <h2>Crupier</h2>
+            <div id="dealer-cards"></div>
+            <p id="dealer-score">Puntos: 0</p>
+        </div>
+        <div id="player">
+            <h2>Jugador</h2>
+            <div id="player-cards"></div>
+            <p id="player-score">Puntos: 0</p>
+        </div>
+        <div id="controls">
+            <button id="hit">Pedir Carta</button>
+            <button id="stand">Plantarse</button>
+            <button id="new-game">Nuevo Juego</button>
+        </div>
+        <p id="message"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
