@@ -11,7 +11,7 @@
     <div id="retro-background">
         <div class="grid"></div>
     </div>
-
+    
     <!-- Menú de Inicio -->
     <div id="start-menu">
         <h1>BlackJack</h1>
@@ -34,6 +34,7 @@
     <!-- Tablero de Juego -->
     <div id="game-board">
         <h1>BlackJack</h1>
+        <p id="total-points">Puntos del Jugador: 100</p>
         <div id="dealer">
             <h2>Crupier</h2>
             <div id="dealer-cards"></div>
@@ -51,6 +52,13 @@
         </div>
         <p id="message"></p>
     </div>
+
+    <div id="game-over-screen" style="display: none;">
+        <h2>¡Game Over!</h2>
+        <p>Te has quedado sin puntos.</p>
+        <button onclick="restartGame()">Reiniciar Juego</button>
+    </div>
+    
 
     <script src="app.js"></script>
 </body>

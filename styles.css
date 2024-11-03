@@ -83,7 +83,7 @@ body {
     border: 10px solid #ff2e63;
     box-shadow: 0 0 20px transparent, 0 0 30px #ff0033;
     width: 400px;
-    height: 550px;
+    height: 600px;
     color: #08d9d6;
     display: none;
 }
@@ -163,6 +163,27 @@ h1, h2 {
     animation: moveGrid 10s linear infinite;
     opacity: 0.2;
 }
+
+#game-over-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#game-over-screen button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 
 @keyframes moveGrid {
     0% {
